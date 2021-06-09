@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 /*! bulma.io v0.9.2 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
 .button, .input, .textarea, .select select, .file-cta,
@@ -10378,6 +10380,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .is-family-code {
   font-family: monospace !important;
+}
+
+.is-family-special {
+  font-family: 'Inter', sans-serif !important;
 }
 
 .is-block {

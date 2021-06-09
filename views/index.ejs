@@ -1,29 +1,86 @@
-<%- include('./partials/header.ejs', {} ) %>
-<link rel="stylesheet" href="/stylesheets/bulma-carousel.min.css"/>
-
-
-<section class="section">
-    <div class="container">
-        <div id="carousel-demo" class="hero-carousel">
-            <div class="item-1">
-                <img src="/images/veilsa.png">
-            </div>
-            <div class="item-2">
-                <img src="/images/veilsa.png">
-            </div>
-            <div class="item-3">
-                <img src="/images/veilsa.png">
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+    <link rel="stylesheet" href="/stylesheets/bulma.css"/>
+    <link rel="stylesheet" href="/stylesheets/bulma-carousel.min.css"/>
+    <link rel="icon" href="/images/veilsa.png"/>
+    <script src="https://kit.fontawesome.com/fe063c303c.js" crossorigin="anonymous"></script>
+    <title>Home - Veilsa</title>
+</head>
+<body class="is-family-special">
+<section class="hero is-medium has-carousel">
+    <div id="carousel" class="hero-carousel">
+       
+        <div class='has-background'>
+          <img class="is-background" src="https://www.yazilimturkiye.com/wp-content/uploads/2019/08/yazilim_icin_bilgisayar.jpg" alt="" />
         </div>
-    </div>
+    
+      </div>
+            <div class="hero-head">    
+                <div class="container">
+                <nav class="navbar p-2 is-transparent">
+                <div class="navbar-brand">
+                    <a href="/" class="navbar-item">
+                        <h1 class="has-text-white is-active"><i class="fab fa-uncharted"></i> VEILSA</h1>
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </span>
+                    </div>
+                <div class="navbar-menu">
+                    <div class="navbar-end">
+                        <a href="/aboutus" class="navbar-item has-text-white is-active"><i class="fas fa-address-card"></i>&nbsp; About Us</a>
+                        <a href="/contact" class="navbar-item has-text-white"><i class="fas fa-headphones-alt"></i>&nbsp; Contact</a>
+                        <a href="/contact" class="navbar-item has-text-white"><i class="fas fa-heart"></i>&nbsp; Donate</a>
+                        <a href="/contact" class="navbar-item has-text-white"><i class="fas fa-blog"></i>&nbsp; Blog</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link has-text-white"><i class="fas fa-terminal"></i>&nbsp; Project</a> 
+                        
+                            <div class="navbar-dropdown">
+                                <a href="/mobile" class="navbar-item"><i class="fas fa-mobile"></i>&nbsp; Mobile App</a>
+                                <a href="/website" class="navbar-item"><i class="far fa-window-maximize"></i>&nbsp; Web App</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        </div>
+			<div class="hero-body has-text-centered">   
+                 <br/><br/><br/>
+                <h1 style="font-size: 40px;" class="title has-text-white">Veilsa Software Service</h1>
+                <p class="description has-text-white">Veilsa Software develops web and mobile applications. It is an organization that supports open source projects.</p>
+                <br/>
+                <a href="/project" class="is-transparent has-text-white"><i class="fas fa-code"></i>&nbsp; Project</a>&emsp;
+                <a href="/contact" class="is-transparent has-text-white"><i class="fas fa-id-badge"></i>&nbsp; Contact</a>
+                <br/><br/><br/><br/><br/>
+            </div>
 </section>
 
 
 
 <script src="/javascripts/bulma-carousel.js"></script>
 <script>
-    bulmaCarousel.attach('#carousel-demo', {
-        loop:true,
-    });
+    bulmaCarousel.attach('#carousel');
 </script>
-<%- include('./partials/footer.ejs', {} ) %>
+
+<section class="section">
+    <br/><br/><br/>
+    <div class="container block">
+    <img src="/images/web.svg" class="pb-5" style="float:right;" width="500px" height="500px"/>
+    <br/><br/><br/>  
+    <h1 style="font-size: 30px;">Web App</h1>
+    <p>With professional web solutions, we offer our customers visually aesthetic, suitable for search engine criteria, mobile compatible, successful, creative web page designs and web-based advanced software solutions according to target user needs.</p>
+    </div>
+
+</section>
+
+
+</body>
+</html>
