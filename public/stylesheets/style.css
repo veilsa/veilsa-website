@@ -13,3 +13,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: white; 
 }
+
+.index-card:hover {
+  box-shadow: rgb(80, 80, 80) 5px 5px 5px;
+}
