@@ -14,6 +14,47 @@
   background: white; 
 }
 
-.sa {
-  box-shadow: rgb(100, 100, 100) 3px 3px 3px;
+
+@keyframes index {
+  0%   {bottom:0px; top:0px;}
+  25%  {bottom:0px; top:-50px;}
+  50%  {bottom:0px; top:-50px;}
+  75%  {bottom:0px; top:-50px;}
+  100% {bottom:0px; top:-50px;}
+}
+
+@keyframes language {
+  0%   {bottom:0px; top:0px;}
+  25%  {bottom:0px; top:-10px;}
+  50%  {bottom:0px; top:-10px;}
+  75%  {bottom:0px; top:-10px;}
+  100% {bottom:0px; top:-10px;}
+}
+
+.index-column {
+  box-shadow: rgb(200, 200, 200) 3px 3px 3px;
+  transition: 1s;
+  position: relative;
+}
+
+.index-column:hover {
+  animation-name: index;
+  animation-duration: 4s;
+  background-color: #363636;
+  color:white;
+  box-shadow: rgb(150, 150, 150) 4px 4px 4px;
+}
+
+.language-column {
+  box-shadow: rgb(150, 150, 150) 3px 3px 3px;
+  transition: 0.5s;
+  position: relative;
+}
+
+.language-column:hover {
+  animation-name: language;
+  animation-duration: 4s;
+  background-color: #363636;
+  color:white;
+  box-shadow: rgb(100, 100, 100) 4px 4px 4px;
 }
