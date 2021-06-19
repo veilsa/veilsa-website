@@ -1,39 +1,35 @@
-#navbar-logo {
-    width: 60px;
-    height: 60px;
+::-webkit-scrollbar {
+  width: 0px;
 }
 
-#index-logo {
-    width:250px;
-    height:250px;
-    border: 1px solid black;
+.hero {
+  background-image: url('/images/computer.jpg');
+  background-size: cover;
 }
 
-#index-text {
-    font-weight: bold;
+#nav-btn {
+  color:white;
+  text-decoration: none;
 }
 
-#tech-text {
-    font-size: 20px;
+
+@keyframes goup {
+  0%   {top:0px;}
+  25%  {top:-20px;}
+  50%  {top:-20px;}
+  75%  {top:-20px;}
+  100% {top:-20px;}
 }
 
-#repos {
-    text-decoration: none;
-    color: white;
+.shadow-i {
+  box-shadow: rgb(100, 100, 100) 3px 3px 3px;
+  position: relative;
+  transition: 0.2s;
 }
 
-#twitter , #instagram , #discord{
-    color:white;
-}
-
-#twitter:hover {
-    color:#00aced;
-}
-
-#instagram:hover {
-    color: #f73846;
-}
-
-#discord:hover {
-    color: #6d85d2;
+.shadow-i:hover {
+  background-color:#1c1f23;
+  color:white;
+  animation-name: goup;
+  animation-duration: 5s;
 }
