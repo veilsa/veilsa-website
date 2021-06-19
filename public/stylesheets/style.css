@@ -1,60 +1,39 @@
-/* width */
-::-webkit-scrollbar {
-  width: 0px;
-  background-color: rgb(22, 22, 22);
+#navbar-logo {
+    width: 60px;
+    height: 60px;
 }
 
-::-webkit-scrollbar-thumb {
-  background: white; 
-  border-radius: 10px;
+#index-logo {
+    width:250px;
+    height:250px;
+    border: 1px solid black;
 }
 
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: white; 
+#index-text {
+    font-weight: bold;
 }
 
-
-@keyframes index {
-  0%   {bottom:0px; top:0px;}
-  25%  {bottom:0px; top:-50px;}
-  50%  {bottom:0px; top:-50px;}
-  75%  {bottom:0px; top:-50px;}
-  100% {bottom:0px; top:-50px;}
+#tech-text {
+    font-size: 20px;
 }
 
-@keyframes language {
-  0%   {bottom:0px; top:0px;}
-  25%  {bottom:0px; top:-10px;}
-  50%  {bottom:0px; top:-10px;}
-  75%  {bottom:0px; top:-10px;}
-  100% {bottom:0px; top:-10px;}
+#repos {
+    text-decoration: none;
+    color: white;
 }
 
-.index-column {
-  box-shadow: rgb(200, 200, 200) 3px 3px 3px;
-  transition: 1s;
-  position: relative;
+#twitter , #instagram , #discord{
+    color:white;
 }
 
-.index-column:hover {
-  animation-name: index;
-  animation-duration: 4s;
-  background-color: #363636;
-  color:white;
-  box-shadow: rgb(150, 150, 150) 4px 4px 4px;
+#twitter:hover {
+    color:#00aced;
 }
 
-.language-column {
-  box-shadow: rgb(150, 150, 150) 3px 3px 3px;
-  transition: 0.5s;
-  position: relative;
+#instagram:hover {
+    color: #f73846;
 }
 
-.language-column:hover {
-  animation-name: language;
-  animation-duration: 4s;
-  background-color: #363636;
-  color:white;
-  box-shadow: rgb(100, 100, 100) 4px 4px 4px;
+#discord:hover {
+    color: #6d85d2;
 }
