@@ -11,18 +11,16 @@
     <title>Home - Veilsa</title>
 </head>
 <body class="body">
-
-  <section class="section hero">
-    <nav class="navbar navbar-expand-lg p-2">
+    <nav class="navbar navbar-expand-lg p-2 navbar-light bg-light shadow">
       <div class="container-fluid">
-      <a class="navbar-brand" id="nav-btn" href="/"><i class="fab fa-uncharted"></i> Veilsa</a>
+      <a class="navbar-brand" href="/"><i class="fab fa-uncharted"></i> Veilsa</a>
       <button class="navbar-toggler text-light" data-bs-target="navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-2">
           <li class="navbar-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="nav-btn" data-bs-toggle="dropdown">
+            <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">
               <i class="fas fa-terminal"></i> Projeler</a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" href="/project/mobile"><i class="fas fa-mobile-alt"></i> Mobil</a></li>
@@ -30,27 +28,85 @@
             </ul>
           </li>
           <li class="navbar-item">
-            <a class="nav-link active" id="nav-btn" href="/aboutus"><i class="fas fa-address-card"></i> Hakkımızda</a>
+            <a class="nav-link active" href="/aboutus"><i class="fas fa-address-card"></i> Hakkımızda</a>
           </li>
           <li class="navbar-item">
-            <a class="nav-link active" id="nav-btn" href="/aboutus#contact"><i class="fas fa-headset"></i> İletişim</a>
+            <a class="nav-link active" href="/aboutus#contact"><i class="fas fa-headset"></i> İletişim</a>
           </li>
           <li class="navbar-item">
-            <a class="nav-link active" id="nav-btn" href="/blog"><i class="fas fa-blog"></i> Blog</a>
+            <a class="nav-link active" href="/blog"><i class="fas fa-blog"></i> Blog</a>
           </li>
         </ul>
       </div>
       </div>
     </nav>
-    <div style="padding-top: 250px; padding-bottom: 260px;" class="text-center text-light">
-      <div class="container">
-      <h1>Hakkımızda</h1>
-      <a href="#go" style="text-decoration:none; color:wheat;"><p><i class="fas fa-mouse fa-2x"></i></p></a>
-    </div>
+
+  <section id="go" class="section">
+    <div class="container">
+    <h2 align="center" class="pt-5 pb-5">Hakkımızda</h2>
+    <h4>Kuruluş</h4>
+    <p class="pb-2">2022 Yılı Ocak ayında Erzurum merkezli, dört ortaklı limited şirket olarak kurulmuştur. Web ve mobil uygulama geliştirerek müşterilere en iyi hizmeti sunmaya çalışmaktayız.</p>
+    
+    <h4>Misyon</h4>
+    <p class="pb-2">Bizlere şirketlerinin internet dünyasındaki vitrinlerini emanet edenlere en son yenilikler ışığında hızlı, karlı, güvenli ve etkin çözümler sunabilmektir. Ürün ve hizmet kalitemizi sürekli geliştirerek müşteri talep ve beklentilerini en üst seviyede karşılamak, Güçlü bir iletişim ile müşterilerimizle aramızda duygusal bir bağ yaratmak ve müşteri sadakatini sağlamak, rekabet gücümüzü ve kârlılığımızı arttırmak adına kaliteli hizmet sunmaktır.</p>
+
+      <h4>Vizyon</h4>
+      <p>Konusunda uzman ve tecrübeli kadromuzla bilgi teknolojileri alanında yenilikçi, dürüst, memnuniyete önem veren ve çoğu kesim tarafından basite indirgenen hizmet alanlarımızın önemini kanıtlayan bir firma olmak. Yazlım ve tasarım sektöründe mutlu ettiği müşterilerle önce İzmir’in, daha sonra da Türkiye’nin yenilikçi, mükemmelliği arayan, saygın ve lider firması olabilmektir.</p>
+  </div>
   </section>
 
-  <section id="go">
+  <section id="contact" class="section" style="margin-bottom:100px">
+    <div class="container"> 
+    <h2 align="center" class="pt-5 pb-5">İletişim</h2>
     
+<div>
+  <h3>Bize mail gönder</h3>
+  <br/> 
+  <form id="form" action="/sendmail" method="POST">
+    <div class="row">
+      <div class="col-md-4">
+      <label for="name" class="form-label">İsim</label>
+      <input type="text" class="form-control shadow" name="name" id="name">
+    </div>
+  
+    <div class="col-md-4 float-end">
+      <label for="surname" class="form-label">Soy isim</label>
+      <input type="text" class="form-control shadow" name="surname" id="surname">
+    </div>
+  </div> 
+  <br/>
+    <div class="row">
+    <div class="col-md-4">
+    <label for="email" class="form-label">E-Posta</label>
+    <input type="text" class="form-control shadow" name="email" id="email">
+  </div>
+
+  <div class="col-md-4 float-end">
+    <label for="subject" class="form-label">Konu</label>
+    <input type="text" class="form-control shadow" name="subject" id="subject">
+  </div>
+</div> 
+<br/>
+  <div class="col-md-8">
+    <label for="message" class="form-label">Mesaj</label>
+    <textarea class="form-control shadow pb-5" name="message" id="message"></textarea>
+</div>   
+  </form> 
+</div>
+
+<div class="col-md-3 btn float-end position-relative" style="bottom:300px;">
+  <i class="fas fa-map fa-2x"></i><br/> 
+  <h4>Adres</h4> 
+  <p>Erzurum</p>
+</div>
+
+<div class="col-md-3 btn float-end position-relative" style="bottom:100px; left:280px">
+  <i class="fas fa-phone fa-2x"></i><br/> 
+  <h4>Telefon</h4> 
+  <p>+90 555 555 55 55</p>
+</div>
+
+</div>
   </section>
 
 

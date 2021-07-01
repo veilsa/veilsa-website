@@ -21,13 +21,12 @@
   100% {top:-20px;}
 }
 
-.shadow-i {
-  box-shadow: rgb(100, 100, 100) 3px 3px 3px;
+.index {
   position: relative;
   transition: 0.2s;
 }
 
-.shadow-i:hover {
+.index:hover {
   background-color:#1c1f23;
   color:white;
   animation-name: goup;
