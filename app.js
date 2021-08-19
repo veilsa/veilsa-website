@@ -4,9 +4,26 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var mysql = require('mysql');
+var settings = require('./settings.json')
 
+var connection = mysql.createConnection({
+  host     : settings.host,
+  user     : settings.user,
+  password : settings.password,
+  database : settings.db
+});
+
+connection.connect((err)=> {
+  if (err){
+      throw err;
+  }
+  console.log('MySQL veritabanına başarıyla bağlanıldı.'); 
+});
+
+module.exports = {con:connection};
+
+var indexRouter = require('./routes/index');
 var app = express();
 
 // view engine setup
@@ -20,7 +37,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

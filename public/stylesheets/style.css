@@ -7,6 +7,16 @@
   background-size: cover;
 }
 
+.hero1 {
+  background-image: url('/images/mobile.jpg');
+  background-size: cover;
+}
+
+.hero2 {
+  background-image: url('/images/web.jpg');
+  background-size: cover;
+}
+
 #nav-btn {
   color:white;
   text-decoration: none;
